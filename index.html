@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair Programming, Semana 9</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14a5e93892.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedor__busqueda">
+            <div class="contenedor__busqueda--items">
+                <div class="contenedor__busqueda-buscador">
+                    <i class="fa-solid lupa fa-magnifying-glass"></i>
+                    <input id="buscar" class="texto-pequeno" type="search" placeholder="Search GitHub Username...">
+                </div>
+                <div class="contenedor__busqueda-boton">
+                    <input class="texto-pequeno" type="button" value="Search" onclick="getGitHubData()">
+                </div>
+            </div>
+        </div>
+        <div class="contenedor__datos">
+            <div class="contenedor__datos--imagen">
+                <img id="imagen-usuario" class="imagen-usuario" src="images/github_cat.png" alt="Gatito de GitHub">
+            </div>
+            <div class="contenedor__datos--usuario">
+                <div class="contenedor__datos--usuario--columnas">
+                    <h1 id="nombre-usuario" class="texto-grande">The Octocat</h1>
+                    <p id="fecha" class="texto-gris texto-pequeno"> Joined 25 Jan 2011</p>
+                    <p id="usuario" class="texto-azul texto-pequeno">@octocat</p>
+                </div>
+                <div class="contenedor__datos--usuario-descripcion">
+                    <p id="biografia" class="texto-gris texto-pequeno">This profile has not bio</p>
+                </div>
+                <div class="contenedor__datos--usuario-info">
+                    <div>
+                        <p id="repositorios" class="texto-gris texto-pequeno">Repos</p>
+                        <h2 id="numero-repositorios" class="texto-mediano">8</h2>
+                    </div>
+                    <div>
+                        <p id="seguidores" class="texto-gris texto-pequeno">Followers</p>
+                        <h2 id="numero-seguidores" class="texto-mediano">3938</h2>
+                    </div>
+                    <div>
+                        <p id="siguiendo" class="texto-gris texto-pequeno">Following</p>
+                        <h2 id="numero-siguiendo" class="texto-mediano">9</h2>
+                    </div>
+                </div>
+                <div class="contenedor__datos--usuario-social">
+                    <div class="contenedor__datos--usuario-detalle">
+                        <i class="fa-solid fa-location-dot texto-pequeno"></i>
+                        <p id="ubicacion" class="texto-gris texto-pequeno">San Francisco</p>
+                    </div>
+                    <div class="contenedor__datos--usuario-detalle">
+                        <i class="fa-brands fa-twitter texto-pequeno"></i>
+                        <p id="twitter" class="texto-gris texto-pequeno">Not Available</p>
+                    </div>
+                    <div class="contenedor__datos--usuario-detalle">
+                        <i class="fa-solid fa-link texto-pequeno"></i>
+                        <p id="pagina-web" class="texto-gris texto-pequeno">https://github.blog</p>
+                    </div>
+                    <div class="contenedor__datos--usuario-detalle">
+                        <i class="fa-sharp fa-solid fa-building-lock texto-pequeno"></i>
+                        <p id="trabajo" class="texto-gris texto-pequeno">@github</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
